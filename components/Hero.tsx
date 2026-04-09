@@ -8,7 +8,9 @@ export default function Hero() {
   const t = translations[lang]
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+
+      <div className="absolute w-[500px] h-[500px] bg-blue-500/20 blur-3xl rounded-full animate-pulse"></div>
 
       <h1 className="text-6xl md:text-7xl font-semibold mb-6">
         {t.heroTitle}
@@ -18,9 +20,20 @@ export default function Hero() {
         {t.heroDesc}
       </p>
 
-      <a className="px-6 py-3 bg-white text-black rounded-lg">
-        {t.cta}
-      </a>
+      <div className="flex gap-4">
+
+        <a
+          href="https://wa.me/5541992188618?text=Hello,%20I%20would%20like%20a%20free%20analysis.%0A%0ADatabase:%0AEnvironment:%0AMain%20Issue:"
+          className="px-6 py-3 bg-white text-black rounded-lg hover:scale-105"
+        >
+          {t.cta}
+        </a>
+
+        <a href="#services" className="px-6 py-3 border border-gray-700 rounded-lg">
+          {t.services}
+        </a>
+
+      </div>
 
     </section>
   )

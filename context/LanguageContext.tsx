@@ -9,7 +9,7 @@ const LanguageContext = createContext<{
   setLang: (lang: Lang) => void
 } | null>(null)
 
-export const LanguageProvider = ({ children }: any) => {
+export function LanguageProvider({ children }: any) {
   const [lang, setLang] = useState<Lang>("EN")
 
   return (
@@ -19,8 +19,8 @@ export const LanguageProvider = ({ children }: any) => {
   )
 }
 
-export const useLanguage = () => {
-  const context = useContext(LanguageContext)
-  if (!context) throw new Error("useLanguage must be used within provider")
-  return context
+export function useLanguage() {
+  const ctx = useContext(LanguageContext)
+  if (!ctx) throw new Error("useLanguage must be used inside provider")
+  return ctx
 }

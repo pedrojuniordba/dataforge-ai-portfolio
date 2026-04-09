@@ -2,6 +2,17 @@
 
 import { useLanguage } from "../context/LanguageContext"
 
+function Logo() {
+  return (
+    <div className="flex items-center gap-3">
+      <svg viewBox="0 0 100 100" className="w-8 h-8">
+        <circle cx="50" cy="50" r="20" fill="#3b82f6" />
+      </svg>
+      <span className="font-semibold">DataForge AI</span>
+    </div>
+  )
+}
+
 export default function Navbar() {
   const { setLang } = useLanguage()
 
@@ -10,10 +21,7 @@ export default function Navbar() {
 
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <div className="flex items-center gap-3">
-          <img src="/logo.svg" className="w-8 h-8" />
-          <span className="font-semibold">DataForge AI</span>
-        </div>
+        <Logo />
 
         <div className="flex items-center gap-6 text-sm">
 
@@ -29,7 +37,6 @@ export default function Navbar() {
         </div>
 
       </div>
-
     </nav>
   )
 }

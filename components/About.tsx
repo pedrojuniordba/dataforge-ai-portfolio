@@ -1,4 +1,5 @@
 "use client"
+
 import { useLanguage } from "../context/LanguageContext"
 import { translations } from "../lib/translations"
 
@@ -8,13 +9,10 @@ export default function About() {
 
   return (
     <section id="about" className="py-32 px-6">
-
-      <h2 className="text-4xl mb-12">{t.aboutTitle}</h2>
-
-      <p>{t.aboutText1}</p>
-      <p>{t.aboutText2}</p>
-      <p>{t.aboutText3}</p>
-
+      <h2 className="text-4xl mb-12">{t.about}</h2>
+      <p className="text-gray-400 max-w-2xl">
+        Senior Database Engineer focused on performance, scalability and AI automation.
+      </p>
     </section>
   )
 }
