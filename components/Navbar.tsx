@@ -4,16 +4,24 @@ export default function Navbar() {
 
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <span className="text-white font-semibold tracking-tight">
-          DataForge AI
-        </span>
+        <div className="flex items-center gap-3">
+          <img src="/logo.png" className="w-8 h-8" />
+          <span className="font-semibold">DataForge AI</span>
+        </div>
 
-        <a
-          href="https://wa.me/5541992188618?text=Hello,%20I%20found%20DataForge%20AI%20and%20would%20like%20to%20know%20more%20about%20your%20services."
-          className="text-sm border border-gray-700 px-4 py-2 rounded-lg hover:bg-gray-900 transition"
-        >
-          Contact
-        </a>
+        <div className="flex items-center gap-6 text-sm text-gray-400">
+
+          <a href="#services" className="hover:text-white">Services</a>
+          <a href="#about" className="hover:text-white">About</a>
+
+          {/* seletor idioma */}
+          <select className="bg-black border border-gray-700 rounded px-2 py-1 text-white">
+            <option>EN</option>
+            <option>PT</option>
+            <option>ES</option>
+          </select>
+
+        </div>
 
       </div>
 
