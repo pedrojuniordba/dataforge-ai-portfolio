@@ -3,7 +3,7 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import About from "../components/About"
 import Authority from "../components/Authority"
-import WhatsAppButton from "../components/WhatsAppButton"
+import FloatingButtons from "../components/FloatingButtons"
 import Footer from "../components/Footer"
 
 export default function Home() {
@@ -11,17 +11,11 @@ export default function Home() {
     <main className="bg-black text-white">
 
       <Navbar />
-
       <Hero />
-
       <Services />
-
       <About />
-
       <Authority />
-
-      <WhatsAppButton />
-
+      <FloatingButtons />
       <Footer />
 
     </main>

@@ -1,9 +1,9 @@
 "use client"
 
-import { useState } from "react"
+import { useLanguage } from "../context/LanguageContext"
 
 export default function Navbar() {
-  const [lang, setLang] = useState("EN")
+  const { setLang } = useLanguage()
 
   return (
     <nav className="fixed top-0 w-full bg-black/60 backdrop-blur border-b border-gray-800 z-50">
@@ -20,13 +20,10 @@ export default function Navbar() {
           <a href="#services">Services</a>
           <a href="#about">About</a>
 
-          {/* idiomas */}
-          <div className="flex gap-2">
-
+          <div className="flex gap-2 text-lg">
             <button onClick={() => setLang("EN")}>🇺🇸</button>
             <button onClick={() => setLang("PT")}>🇧🇷</button>
             <button onClick={() => setLang("ES")}>🇪🇸</button>
-
           </div>
 
         </div>
