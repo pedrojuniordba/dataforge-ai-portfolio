@@ -18,23 +18,9 @@ export default function Hero() {
         {t.heroDesc}
       </p>
 
-      <div className="flex gap-4">
-
-        <a
-          href="https://wa.me/5541992188618?text=Hello,%20I%20would%20like%20a%20free%20analysis.%0A%0ADatabase:%0AEnvironment:%0AMain%20Issue:"
-          className="px-6 py-3 bg-white text-black rounded-lg"
-        >
-          {t.cta}
-        </a>
-
-        <a
-          href="#services"
-          className="px-6 py-3 border border-gray-700 rounded-lg"
-        >
-          {t.services}
-        </a>
-
-      </div>
+      <a className="px-6 py-3 bg-white text-black rounded-lg">
+        {t.cta}
+      </a>
 
     </section>
   )
