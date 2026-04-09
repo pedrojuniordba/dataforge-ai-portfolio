@@ -7,21 +7,23 @@ export default function About() {
         <h2 className="text-4xl font-semibold mb-12">About</h2>
 
         <p className="text-gray-400 mb-6">
-          Senior Database Engineer & DBA with extensive experience managing mission-critical environments across multiple platforms.
+          Senior Database Engineer specializing in high-performance data environments,
+          delivering scalable and resilient solutions across databases, cloud and AI automation.
         </p>
 
         <p className="text-gray-500 mb-6">
-          Specialized in high availability, performance tuning, backup & recovery, migrations and advanced troubleshooting,
-          ensuring stability in 24x7 production environments.
+          Expertise in Oracle, PostgreSQL, SQL Server, MySQL and enterprise data platforms,
+          focusing on performance tuning, high availability, migrations and advanced troubleshooting.
         </p>
 
         <p className="text-gray-500 mb-6">
-          Strong expertise in scalable data architectures across cloud and on-premise,
-          focusing on performance, resilience and governance.
+          Strong background in designing modern data architectures across cloud and on-premise environments,
+          ensuring security, scalability and reliability.
         </p>
 
         <p className="text-gray-500">
-          Passionate about automation, data engineering and building reliable systems.
+          Specialized in automation and AI-driven solutions to optimize operations,
+          reduce costs and enable data-driven decision making.
         </p>
 
       </div>

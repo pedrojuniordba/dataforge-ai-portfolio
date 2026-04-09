@@ -6,11 +6,21 @@ export default function Footer() {
         DataForge AI
       </p>
 
-      <p className="mt-2 text-sm">
+      <p className="mt-4 text-sm">
         Engineering Data Intelligence
       </p>
 
-      <p className="mt-4 text-xs">
+      <div className="mt-6">
+        <a
+          href="https://instagram.com/pedrossjunior_"
+          target="_blank"
+          className="hover:text-white"
+        >
+          📸 @pedrossjunior_
+        </a>
+      </div>
+
+      <p className="mt-6 text-xs">
         © {new Date().getFullYear()} DataForge AI
       </p>
 
