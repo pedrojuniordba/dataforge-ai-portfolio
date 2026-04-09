@@ -1,6 +1,18 @@
-type Lang = "EN" | "PT" | "ES"
+export type Lang = "EN" | "PT" | "ES"
 
-export const translations: Record<Lang, any> = {
+type Translation = {
+  heroTitle: string
+  heroDesc: string
+  services: string
+  about: string
+  cta: string
+  databases: string
+  cloud: string
+  ai: string
+  authority: string
+}
+
+export const translations: Record<Lang, Translation> = {
   EN: {
     heroTitle: "Transform Your Data Into Intelligence",
     heroDesc: "Database, Cloud and AI Automation solutions focused on performance and scalability.",
@@ -8,30 +20,32 @@ export const translations: Record<Lang, any> = {
     about: "About",
     cta: "Get Free Analysis",
     databases: "Databases",
-    cloud: "Cloud & Architecture",
+    cloud: "Cloud",
     ai: "AI Automation",
-    authority: "Certified Oracle Professional • AI Agents • 24x7 Systems"
+    authority: "Certified Oracle • AI Agents • 24x7 Systems"
   },
+
   PT: {
     heroTitle: "Transforme seus dados em inteligência",
-    heroDesc: "Soluções em banco de dados, cloud e automação com IA.",
+    heroDesc: "Soluções em banco de dados, cloud e IA.",
     services: "Serviços",
     about: "Sobre",
     cta: "Análise Gratuita",
     databases: "Bancos de Dados",
-    cloud: "Cloud & Arquitetura",
-    ai: "Automação com IA",
+    cloud: "Cloud",
+    ai: "Automação IA",
     authority: "Certificação Oracle • IA • Sistemas 24x7"
   },
+
   ES: {
     heroTitle: "Transforma tus datos en inteligencia",
-    heroDesc: "Soluciones en bases de datos, cloud y automatización.",
+    heroDesc: "Soluciones en bases de datos y automatización.",
     services: "Servicios",
     about: "Sobre",
     cta: "Análisis Gratis",
     databases: "Bases de Datos",
     cloud: "Cloud",
-    ai: "Automatización IA",
-    authority: "Certificación Oracle • IA • Sistemas Críticos"
+    ai: "IA",
+    authority: "Oracle • IA • Sistemas Críticos"
   }
 }

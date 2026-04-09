@@ -10,19 +10,21 @@ export default function Services() {
   return (
     <section id="services" className="py-32 px-6">
 
-      <h2 className="text-4xl mb-12">{t.services}</h2>
+      <h2 className="text-4xl text-center mb-16 gradient-text">
+        {t.services}
+      </h2>
 
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-        <div className="border p-6 rounded-xl hover:scale-105">
+        <div className="glass p-6 rounded-xl hover:scale-105">
           {t.databases}
         </div>
 
-        <div className="border p-6 rounded-xl hover:scale-105">
+        <div className="glass p-6 rounded-xl hover:scale-105">
           {t.cloud}
         </div>
 
-        <div className="border p-6 rounded-xl hover:scale-105">
+        <div className="glass p-6 rounded-xl hover:scale-105">
           {t.ai}
         </div>
 

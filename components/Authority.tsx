@@ -9,7 +9,7 @@ export default function Authority() {
 
   return (
     <section className="py-20 text-center">
-      <p className="text-gray-400">{t.authority}</p>
+      <p className="text-gray-500">{t.authority}</p>
     </section>
   )
 }

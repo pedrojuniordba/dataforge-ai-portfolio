@@ -1,8 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState } from "react"
-
-type Lang = "EN" | "PT" | "ES"
+import type { Lang } from "../lib/translations"
 
 const LanguageContext = createContext<{
   lang: Lang
