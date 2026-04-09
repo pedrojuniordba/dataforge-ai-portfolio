@@ -9,7 +9,7 @@ export default function Navbar() {
         </span>
 
         <a
-          href="https://wa.me/5541999998888"
+          href="https://wa.me/5541992188618?text=Hello,%20I%20found%20DataForge%20AI%20and%20would%20like%20to%20know%20more%20about%20your%20services."
           className="text-sm border border-gray-700 px-4 py-2 rounded-lg hover:bg-gray-900 transition"
         >
           Contact

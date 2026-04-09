@@ -11,39 +11,24 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-12">
 
           <div className="border border-gray-800 p-6 rounded-xl hover:border-gray-600 transition">
-
-            <h3 className="text-xl mb-4">
-              Oracle Consulting
-            </h3>
-
+            <h3 className="text-xl mb-4">Oracle Performance</h3>
             <p className="text-gray-500">
-              Performance tuning, architecture and high availability.
+              Identify bottlenecks, optimize queries and improve database performance.
             </p>
-
           </div>
 
           <div className="border border-gray-800 p-6 rounded-xl hover:border-gray-600 transition">
-
-            <h3 className="text-xl mb-4">
-              PostgreSQL
-            </h3>
-
+            <h3 className="text-xl mb-4">PostgreSQL Optimization</h3>
             <p className="text-gray-500">
-              Query optimization and scalable database architecture.
+              Scalable architecture and advanced tuning for modern applications.
             </p>
-
           </div>
 
           <div className="border border-gray-800 p-6 rounded-xl hover:border-gray-600 transition">
-
-            <h3 className="text-xl mb-4">
-              AI Automation
-            </h3>
-
+            <h3 className="text-xl mb-4">AI Automation</h3>
             <p className="text-gray-500">
-              Intelligent agents and business automation.
+              Intelligent agents to automate processes and reduce operational costs.
             </p>
-
           </div>
 
         </div>
