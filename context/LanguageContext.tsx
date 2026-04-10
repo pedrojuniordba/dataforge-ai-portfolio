@@ -1,14 +1,17 @@
 "use client"
 
 import { createContext, useContext, useState } from "react"
-import type { Lang } from "../lib/translations"
 
-const LanguageContext = createContext<{
+type Lang = "EN" | "PT" | "ES"
+
+type LanguageContextType = {
   lang: Lang
   setLang: (lang: Lang) => void
-} | null>(null)
+}
 
-export function LanguageProvider({ children }: any) {
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
+
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Lang>("EN")
 
   return (
@@ -19,7 +22,11 @@ export function LanguageProvider({ children }: any) {
 }
 
 export function useLanguage() {
-  const ctx = useContext(LanguageContext)
-  if (!ctx) throw new Error("useLanguage must be used inside provider")
-  return ctx
+  const context = useContext(LanguageContext)
+
+  if (!context) {
+    throw new Error("useLanguage must be used inside provider")
+  }
+
+  return context
 }
