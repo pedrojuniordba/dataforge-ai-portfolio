@@ -4,11 +4,6 @@ import { LanguageProvider } from "../context/LanguageContext"
 export const metadata = {
   title: "DataForge AI",
   description: "Data Engineering & AI Automation",
-  icons: {
-    icon: [
-      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
-    ],
-  },
 }
 
 export default function RootLayout({
@@ -17,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className="bg-black text-white">
         <LanguageProvider>
           {children}
