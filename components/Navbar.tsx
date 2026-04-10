@@ -8,7 +8,7 @@ export default function Navbar() {
         <img
           src="/logo.png"
           alt="DataForge AI"
-          className="h-8 hover:scale-105 transition"
+          className="h-8 bg-black rounded-md p-1"
         />
         <span className="font-semibold text-white text-lg">
           DataForge AI

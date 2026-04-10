@@ -5,7 +5,9 @@ export const metadata = {
   title: "DataForge AI",
   description: "Data Engineering & AI Automation",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+    ],
   },
 }
 
