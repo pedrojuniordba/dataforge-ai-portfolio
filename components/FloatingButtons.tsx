@@ -1,15 +1,10 @@
 export default function FloatingButtons() {
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col gap-3">
-
-      <a href="https://wa.me/5541992188618">
-        <div className="bg-green-500 p-4 rounded-full">💬</div>
-      </a>
-
-      <a href="https://instagram.com/pedrossjunior_" target="_blank">
-        <div className="bg-pink-500 p-4 rounded-full">📸</div>
-      </a>
-
-    </div>
+    <a
+      href="https://wa.me/5541992188618"
+      className="fixed bottom-6 right-6 bg-green-500 text-black px-6 py-4 rounded-full shadow-2xl text-lg font-semibold hover:scale-110 transition"
+    >
+      WhatsApp
+    </a>
   )
 }
