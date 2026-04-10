@@ -1,20 +1,18 @@
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Services from "../components/Services"
-import About from "../components/About"
-import Authority from "../components/Authority"
+import Clients from "../components/Clients"
 import FloatingButtons from "../components/FloatingButtons"
 import Footer from "../components/Footer"
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-black text-white">
 
       <Navbar />
       <Hero />
       <Services />
-      <About />
-      <Authority />
+      <Clients />
       <FloatingButtons />
       <Footer />
 
