@@ -2,7 +2,8 @@
 
 import { createContext, useContext, useState } from "react"
 
-type Lang = "EN" | "PT" | "ES"
+// 👇 tipo centralizado
+export type Lang = "PT" | "EN" | "ES"
 
 type LanguageContextType = {
   lang: Lang
@@ -12,7 +13,7 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Lang>("PT")
+  const [lang, setLang] = useState<Lang>("PT") // padrão PT
 
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>
