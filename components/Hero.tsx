@@ -19,7 +19,7 @@ export default function Hero() {
       </p>
 
       <a
-        href="https://wa.me/5541992188618?text=Hello,%20I%20want%20to%20improve%20my%20data%20environment."
+        href="https://wa.me/5541992188618?text=Hello,%20I%20want%20to%20improve%20my%20data%20environment.%0A%0ADatabase:%0AEnvironment:%0AMain%20Issue:"
         className="px-8 py-4 bg-green-500 text-black rounded-xl text-lg font-medium hover:scale-105 transition"
       >
         {t.cta}

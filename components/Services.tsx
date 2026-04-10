@@ -16,14 +16,23 @@ export default function Services() {
 
         <div>
           <h3 className="text-xl mb-3">{t.databases}</h3>
+          <p className="text-gray-400">
+            Oracle, PostgreSQL, SQL Server performance tuning and HA.
+          </p>
         </div>
 
         <div>
           <h3 className="text-xl mb-3">{t.cloud}</h3>
+          <p className="text-gray-400">
+            ETL pipelines, data modeling and scalable architecture.
+          </p>
         </div>
 
         <div>
           <h3 className="text-xl mb-3">{t.ai}</h3>
+          <p className="text-gray-400">
+            AI agents to automate workflows and reduce costs.
+          </p>
         </div>
 
       </div>
