@@ -15,6 +15,15 @@ export default function Navbar() {
         </span>
       </div>
 
+    {/* IDIOMAS */}
+      <div className="flex gap-3 text-xl">
+
+        <button onClick={() => setLang("PT")}>🇧🇷</button>
+        <button onClick={() => setLang("EN")}>🇺🇸</button>
+        <button onClick={() => setLang("ES")}>🇪🇸</button>
+
+      </div>
+
     </nav>
   )
 }
