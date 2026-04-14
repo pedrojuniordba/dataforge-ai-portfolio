@@ -8,9 +8,18 @@ type Translation = {
   }
   services: {
     title: string
-    databases: { title: string; desc: string }
-    cloud: { title: string; desc: string }
-    ai: { title: string; desc: string }
+    databases: {
+      title: string
+      desc: string
+    }
+    cloud: {
+      title: string
+      desc: string
+    }
+    ai: {
+      title: string
+      desc: string
+    }
   }
 }
 
@@ -33,7 +42,7 @@ const translations: Record<Lang, Translation> = {
         desc: "Arquitetura escalável, segura e otimizada para ambientes cloud.",
       },
       ai: {
-        title: "AI Automation",
+        title: "Automação com IA",
         desc: "Automação de processos com agentes inteligentes e IA.",
       },
     },
