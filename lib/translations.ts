@@ -1,91 +1,91 @@
-export type Lang = "EN" | "PT" | "ES"
-
-type Client = {
-  name: string
-  logo: string
-}
+import { Lang } from "../context/LanguageContext"
 
 type Translation = {
-  heroTitle: string
-  heroDesc: string
-  cta: string
-
-  services: string
-  databases: string
-  cloud: string
-  ai: string
-
-  clientsTitle: string
-  clients: Client[]
+  hero: {
+    title: string
+    subtitle: string
+    cta: string
+  }
+  services: {
+    title: string
+    databases: { title: string; desc: string }
+    cloud: { title: string; desc: string }
+    ai: { title: string; desc: string }
+  }
 }
 
-export const translations: Record<Lang, Translation> = {
-  EN: {
-    heroTitle: "Data Engineering & AI Automation",
-    heroDesc:
-      "I help companies optimize databases, build scalable data pipelines and automate processes using AI agents.",
-    cta: "Get Free Analysis",
-
-    services: "What I Do",
-    databases: "Databases",
-    cloud: "Data Engineering",
-    ai: "AI Automation",
-
-    clientsTitle: "Trusted by teams working with critical data",
-
-    clients: [
-      { name: "Stripe", logo: "/logos/stripe.svg" },
-      { name: "Amazon", logo: "/logos/amazon.svg" },
-      { name: "Google", logo: "/logos/google.svg" },
-      { name: "Microsoft", logo: "/logos/microsoft.svg" },
-      { name: "IBM", logo: "/logos/ibm.svg" },
-      { name: "Oracle", logo: "/logos/oracle.svg" }
-    ]
+const translations: Record<Lang, Translation> = {
+  PT: {
+    hero: {
+      title: "Transforme seus dados em inteligência",
+      subtitle:
+        "Soluções em banco de dados, engenharia de dados e automação com agentes de IA",
+      cta: "Análise gratuita",
+    },
+    services: {
+      title: "Serviços",
+      databases: {
+        title: "Databases",
+        desc: "Otimização, tuning e alta performance para Oracle, PostgreSQL e outros bancos.",
+      },
+      cloud: {
+        title: "Cloud",
+        desc: "Arquitetura escalável, segura e otimizada para ambientes cloud.",
+      },
+      ai: {
+        title: "AI Automation",
+        desc: "Automação de processos com agentes inteligentes e IA.",
+      },
+    },
   },
 
-  PT: {
-    heroTitle: "Engenharia de Dados & Automação com IA",
-    heroDesc:
-      "Ajudo empresas a otimizar bancos de dados, construir pipelines escaláveis e automatizar processos com agentes de IA.",
-    cta: "Análise Gratuita",
-
-    services: "O que eu faço",
-    databases: "Bancos de Dados",
-    cloud: "Engenharia de Dados",
-    ai: "Automação com IA",
-
-    clientsTitle: "Empresas que confiam em soluções de dados críticos",
-
-    clients: [
-      { name: "Stripe", logo: "/logos/stripe.svg" },
-      { name: "Amazon", logo: "/logos/amazon.svg" },
-      { name: "Google", logo: "/logos/google.svg" },
-      { name: "Microsoft", logo: "/logos/microsoft.svg" },
-      { name: "IBM", logo: "/logos/ibm.svg" },
-      { name: "Oracle", logo: "/logos/oracle.svg" }
-    ]
+  EN: {
+    hero: {
+      title: "Transform your data into intelligence",
+      subtitle:
+        "Database, data engineering and AI automation solutions focused on performance",
+      cta: "Free analysis",
+    },
+    services: {
+      title: "Services",
+      databases: {
+        title: "Databases",
+        desc: "Optimization and performance tuning for Oracle, PostgreSQL and more.",
+      },
+      cloud: {
+        title: "Cloud",
+        desc: "Scalable and secure cloud architecture.",
+      },
+      ai: {
+        title: "AI Automation",
+        desc: "Process automation with AI agents.",
+      },
+    },
   },
 
   ES: {
-    heroTitle: "Ingeniería de Datos & Automatización con IA",
-    heroDesc:
-      "Ayudo a empresas a optimizar bases de datos, construir pipelines escalables y automatizar procesos con agentes de IA.",
-    cta: "Análisis Gratis",
-
-    services: "Qué hago",
-    databases: "Bases de Datos",
-    cloud: "Ingeniería de Datos",
-    ai: "Automatización IA",
-
-    clientsTitle: "Empresas que confían en soluciones de datos críticos",
-
-    clients: [
-      { name: "Stripe", logo: "/logos/stripe.svg" },
-      { name: "Amazon", logo: "/logos/amazon.svg" },
-      { name: "Google", logo: "/logos/google.svg" },
-      { name: "Microsoft", logo: "/logos/microsoft.svg" },
-      { name: "IBM", logo: "/logos/ibm.svg" },
-      { name: "Oracle", logo: "/logos/oracle.svg" }
-    ]
-  }
+    hero: {
+      title: "Transforma tus datos en inteligencia",
+      subtitle:
+        "Soluciones en bases de datos, ingeniería de datos y automatización con IA",
+      cta: "Análisis gratuito",
+    },
+    services: {
+      title: "Servicios",
+      databases: {
+        title: "Bases de datos",
+        desc: "Optimización y rendimiento para Oracle, PostgreSQL y más.",
+      },
+      cloud: {
+        title: "Cloud",
+        desc: "Arquitectura escalable y segura.",
+      },
+      ai: {
+        title: "Automatización IA",
+        desc: "Automatización de procesos con agentes inteligentes.",
+      },
+    },
+  },
 }
+
+export default translations

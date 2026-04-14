@@ -1,42 +1,34 @@
 "use client"
 
 import { useLanguage } from "../context/LanguageContext"
-import { translations } from "../lib/translations"
+import translations from "../lib/translations"
 
 export default function Services() {
   const { lang } = useLanguage()
   const t = translations[lang]
 
   return (
-    <section className="py-24 px-6 text-center">
+    <section className="py-20 px-6 max-w-5xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-12">
+        {t.services.title}
+      </h2>
 
-      <h2 className="text-3xl mb-16">{t.services}</h2>
-
-      <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-
-        <div>
-          <h3 className="text-xl mb-3">{t.databases}</h3>
-          <p className="text-gray-400">
-            Oracle, PostgreSQL, SQL Server performance tuning and HA.
-          </p>
+      <div className="grid md:grid-cols-3 gap-8">
+        <div className="border border-gray-800 p-6 rounded-xl">
+          <h3>{t.services.databases.title}</h3>
+          <p className="text-gray-400">{t.services.databases.desc}</p>
         </div>
 
-        <div>
-          <h3 className="text-xl mb-3">{t.cloud}</h3>
-          <p className="text-gray-400">
-            ETL pipelines, data modeling and scalable architecture.
-          </p>
+        <div className="border border-gray-800 p-6 rounded-xl">
+          <h3>{t.services.cloud.title}</h3>
+          <p className="text-gray-400">{t.services.cloud.desc}</p>
         </div>
 
-        <div>
-          <h3 className="text-xl mb-3">{t.ai}</h3>
-          <p className="text-gray-400">
-            AI agents to automate workflows and reduce costs.
-          </p>
+        <div className="border border-gray-800 p-6 rounded-xl">
+          <h3>{t.services.ai.title}</h3>
+          <p className="text-gray-400">{t.services.ai.desc}</p>
         </div>
-
       </div>
-
     </section>
   )
 }

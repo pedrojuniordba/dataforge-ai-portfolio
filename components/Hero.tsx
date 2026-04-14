@@ -1,30 +1,28 @@
 "use client"
 
 import { useLanguage } from "../context/LanguageContext"
-import { translations } from "../lib/translations"
+import translations from "../lib/translations"
 
 export default function Hero() {
   const { lang } = useLanguage()
   const t = translations[lang]
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <section className="text-center py-24 px-6">
+      <h1 className="text-4xl md:text-6xl font-bold">{t.hero.title}</h1>
 
-      <h1 className="text-5xl md:text-6xl font-semibold mb-6">
-        {t.heroTitle}
-      </h1>
-
-      <p className="text-gray-400 max-w-xl mb-10">
-        {t.heroDesc}
+      <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
+        {t.hero.subtitle}
       </p>
 
-      <a
-        href="https://wa.me/5541992188618?text=Hello,%20I%20want%20to%20improve%20my%20data%20environment.%0A%0ADatabase:%0AEnvironment:%0AMain%20Issue:"
-        className="px-8 py-4 bg-green-500 text-black rounded-xl text-lg font-medium hover:scale-105 transition"
-      >
-        {t.cta}
-      </a>
-
+      <div className="mt-10">
+        <a
+          href="https://wa.me/5541992188618?text=Olá,%20vim%20pelo%20site%20e%20quero%20uma%20análise.%0A%0A1.%20Banco:%0A2.%20Ambiente:%0A3.%20Problema:"
+          className="px-8 py-4 bg-green-500 text-black rounded-xl text-lg font-semibold hover:scale-105 transition"
+        >
+          {t.hero.cta}
+        </a>
+      </div>
     </section>
   )
 }
