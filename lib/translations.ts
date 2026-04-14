@@ -12,6 +12,7 @@ type Translation = {
     cloud: { title: string; desc: string }
     ai: { title: string; desc: string }
   }
+  clients: string[]
 }
 
 const translations: Record<Lang, Translation> = {
@@ -37,6 +38,7 @@ const translations: Record<Lang, Translation> = {
         desc: "Agentes inteligentes para automação de processos.",
       },
     },
+    clients: ["Google", "Amazon", "Microsoft", "Oracle", "IBM"],
   },
 
   EN: {
@@ -60,6 +62,7 @@ const translations: Record<Lang, Translation> = {
         desc: "Automation with AI agents.",
       },
     },
+    clients: ["Google", "Amazon", "Microsoft", "Oracle", "IBM"],
   },
 
   ES: {
@@ -83,6 +86,7 @@ const translations: Record<Lang, Translation> = {
         desc: "Agentes inteligentes.",
       },
     },
+    clients: ["Google", "Amazon", "Microsoft", "Oracle", "IBM"],
   },
 }
 

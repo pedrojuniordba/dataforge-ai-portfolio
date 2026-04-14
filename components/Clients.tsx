@@ -1,36 +1,26 @@
 "use client"
 
 import { useLanguage } from "../context/LanguageContext"
-import { translations } from "../lib/translations"
+import translations from "../lib/translations"
 
 export default function Clients() {
   const { lang } = useLanguage()
   const t = translations[lang]
 
   return (
-    <section className="py-24 px-6 text-center border-t border-gray-800">
+    <section className="py-20 px-6 text-center">
+      <h2 className="text-2xl mb-10">Empresas que confiam</h2>
 
-      <h2 className="text-sm uppercase tracking-widest text-gray-500 mb-12">
-        {t.clientsTitle}
-      </h2>
-
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-12 max-w-5xl mx-auto items-center">
-
+      <div className="flex flex-wrap justify-center gap-8">
         {t.clients.map((client, index) => (
           <div
             key={index}
-            className="flex justify-center items-center opacity-70 hover:opacity-100 transition"
+            className="text-gray-500 text-lg hover:text-white transition"
           >
-            <img
-              src={client.logo}
-              alt={client.name}
-              className="h-8 grayscale hover:grayscale-0 transition duration-300"
-            />
+            {client}
           </div>
         ))}
-
       </div>
-
     </section>
   )
 }
