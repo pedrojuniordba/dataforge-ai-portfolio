@@ -15,27 +15,21 @@ export default function Services() {
 
       <div className="grid md:grid-cols-3 gap-8">
         <div className="border border-gray-800 p-6 rounded-xl">
-          <h3 className="mb-2 font-semibold">
-            {t.services.databases.title}
-          </h3>
+          <h3>{t.services.databases.title}</h3>
           <p className="text-gray-400 text-sm">
             {t.services.databases.desc}
           </p>
         </div>
 
         <div className="border border-gray-800 p-6 rounded-xl">
-          <h3 className="mb-2 font-semibold">
-            {t.services.cloud.title}
-          </h3>
+          <h3>{t.services.cloud.title}</h3>
           <p className="text-gray-400 text-sm">
             {t.services.cloud.desc}
           </p>
         </div>
 
         <div className="border border-gray-800 p-6 rounded-xl">
-          <h3 className="mb-2 font-semibold">
-            {t.services.ai.title}
-          </h3>
+          <h3>{t.services.ai.title}</h3>
           <p className="text-gray-400 text-sm">
             {t.services.ai.desc}
           </p>

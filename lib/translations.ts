@@ -12,7 +12,8 @@ type Translation = {
     cloud: { title: string; desc: string }
     ai: { title: string; desc: string }
   }
-  clients: string[]
+  clientsTitle: string
+  clientsSubtitle: string
 }
 
 const translations: Record<Lang, Translation> = {
@@ -38,7 +39,9 @@ const translations: Record<Lang, Translation> = {
         desc: "Agentes inteligentes para automação de processos.",
       },
     },
-    clients: ["Google", "Amazon", "Microsoft", "Oracle", "IBM"],
+    clientsTitle: "Empresas que confiam",
+    clientsSubtitle:
+      "Parceiros e clientes que já contam com soluções em dados e automação com IA",
   },
 
   EN: {
@@ -62,7 +65,9 @@ const translations: Record<Lang, Translation> = {
         desc: "Automation with AI agents.",
       },
     },
-    clients: ["Google", "Amazon", "Microsoft", "Oracle", "IBM"],
+    clientsTitle: "Trusted by companies",
+    clientsSubtitle:
+      "Partners and clients leveraging data engineering and AI automation solutions",
   },
 
   ES: {
@@ -86,7 +91,9 @@ const translations: Record<Lang, Translation> = {
         desc: "Agentes inteligentes.",
       },
     },
-    clients: ["Google", "Amazon", "Microsoft", "Oracle", "IBM"],
+    clientsTitle: "Empresas que confían",
+    clientsSubtitle:
+      "Clientes y socios que utilizan soluciones de datos y automatización con IA",
   },
 }
 

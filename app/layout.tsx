@@ -10,9 +10,7 @@ export default function RootLayout({
     <html lang="pt">
       <body className="bg-black text-white antialiased">
         <LanguageProvider>
-          <div className="max-w-6xl mx-auto px-6">
-            {children}
-          </div>
+          <div className="max-w-6xl mx-auto px-6">{children}</div>
         </LanguageProvider>
       </body>
     </html>

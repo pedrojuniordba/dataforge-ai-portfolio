@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Clients from "../components/Clients"
-import FloatingWhatsApp from "../components/FloatingWhatsApp"
 import Footer from "../components/Footer"
+import FloatingWhatsApp from "../components/FloatingWhatsApp"
 
 export default function Home() {
   return (
