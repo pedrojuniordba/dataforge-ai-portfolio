@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Clients from "../components/Clients"
 import FloatingWhatsApp from "../components/FloatingWhatsApp"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Clients />
+      <Footer />
       <FloatingWhatsApp />
     </main>
   )
