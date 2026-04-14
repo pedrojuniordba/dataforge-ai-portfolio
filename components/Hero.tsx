@@ -17,8 +17,8 @@ export default function Hero() {
 
       <div className="mt-10">
         <a
-          href="https://wa.me/5541992188618?text=Olá,%20vim%20pelo%20site%20e%20quero%20uma%20análise.%0A%0A1.%20Banco:%0A2.%20Ambiente:%0A3.%20Problema:"
-          className="px-8 py-4 bg-green-500 text-black rounded-xl text-lg font-semibold hover:scale-105 transition"
+          href="https://wa.me/5541992188618"
+          className="px-8 py-4 bg-green-500 text-black rounded-xl"
         >
           {t.hero.cta}
         </a>

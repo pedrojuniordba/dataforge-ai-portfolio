@@ -8,18 +8,9 @@ type Translation = {
   }
   services: {
     title: string
-    databases: {
-      title: string
-      desc: string
-    }
-    cloud: {
-      title: string
-      desc: string
-    }
-    ai: {
-      title: string
-      desc: string
-    }
+    databases: { title: string; desc: string }
+    cloud: { title: string; desc: string }
+    ai: { title: string; desc: string }
   }
 }
 
@@ -35,15 +26,15 @@ const translations: Record<Lang, Translation> = {
       title: "Serviços",
       databases: {
         title: "Databases",
-        desc: "Otimização, tuning e alta performance para Oracle, PostgreSQL e outros bancos.",
+        desc: "Otimização e alta performance para Oracle e PostgreSQL.",
       },
       cloud: {
         title: "Cloud",
-        desc: "Arquitetura escalável, segura e otimizada para ambientes cloud.",
+        desc: "Arquitetura escalável e segura.",
       },
       ai: {
         title: "Automação com IA",
-        desc: "Automação de processos com agentes inteligentes e IA.",
+        desc: "Agentes inteligentes para automação de processos.",
       },
     },
   },
@@ -51,23 +42,22 @@ const translations: Record<Lang, Translation> = {
   EN: {
     hero: {
       title: "Transform your data into intelligence",
-      subtitle:
-        "Database, data engineering and AI automation solutions focused on performance",
+      subtitle: "Database and AI automation solutions",
       cta: "Free analysis",
     },
     services: {
       title: "Services",
       databases: {
         title: "Databases",
-        desc: "Optimization and performance tuning for Oracle, PostgreSQL and more.",
+        desc: "Performance and optimization.",
       },
       cloud: {
         title: "Cloud",
-        desc: "Scalable and secure cloud architecture.",
+        desc: "Scalable architecture.",
       },
       ai: {
         title: "AI Automation",
-        desc: "Process automation with AI agents.",
+        desc: "Automation with AI agents.",
       },
     },
   },
@@ -75,23 +65,22 @@ const translations: Record<Lang, Translation> = {
   ES: {
     hero: {
       title: "Transforma tus datos en inteligencia",
-      subtitle:
-        "Soluciones en bases de datos, ingeniería de datos y automatización con IA",
+      subtitle: "Soluciones en datos y automatización con IA",
       cta: "Análisis gratuito",
     },
     services: {
       title: "Servicios",
       databases: {
         title: "Bases de datos",
-        desc: "Optimización y rendimiento para Oracle, PostgreSQL y más.",
+        desc: "Optimización y rendimiento.",
       },
       cloud: {
         title: "Cloud",
-        desc: "Arquitectura escalable y segura.",
+        desc: "Arquitectura escalable.",
       },
       ai: {
         title: "Automatización IA",
-        desc: "Automatización de procesos con agentes inteligentes.",
+        desc: "Agentes inteligentes.",
       },
     },
   },

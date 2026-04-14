@@ -10,9 +10,9 @@ export default function Navbar() {
       <div className="text-white font-semibold text-lg">DataForge AI</div>
 
       <div className="flex gap-3 text-xl">
-        <button onClick={() => setLang("PT" as const)}>🇧🇷</button>
-        <button onClick={() => setLang("EN" as const)}>🇺🇸</button>
-        <button onClick={() => setLang("ES" as const)}>🇪🇸</button>
+        <button onClick={() => setLang("PT")}>🇧🇷</button>
+        <button onClick={() => setLang("EN")}>🇺🇸</button>
+        <button onClick={() => setLang("ES")}>🇪🇸</button>
       </div>
     </nav>
   )
