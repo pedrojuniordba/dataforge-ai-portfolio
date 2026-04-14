@@ -11,8 +11,6 @@ export default function Home() {
       <Hero />
       <Services />
       <Clients />
-
-      {/* BOTÃO DE CONVERSÃO */}
       <FloatingWhatsApp />
     </main>
   )

@@ -8,15 +8,14 @@ export default function Clients() {
   const t = translations[lang]
 
   return (
-    <section className="py-20 px-6 text-center">
-      <h2 className="text-2xl mb-10">Empresas que confiam</h2>
+    <section className="py-20 text-center">
+      <h2 className="text-2xl mb-10 text-gray-400">
+        Empresas que confiam
+      </h2>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-10 text-gray-600">
         {t.clients.map((client, index) => (
-          <div
-            key={index}
-            className="text-gray-500 text-lg hover:text-white transition"
-          >
+          <div key={index} className="hover:text-white transition">
             {client}
           </div>
         ))}

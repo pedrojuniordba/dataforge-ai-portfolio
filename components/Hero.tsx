@@ -8,8 +8,10 @@ export default function Hero() {
   const t = translations[lang]
 
   return (
-    <section className="text-center py-24 px-6">
-      <h1 className="text-4xl md:text-6xl font-bold">{t.hero.title}</h1>
+    <section className="text-center py-24">
+      <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        {t.hero.title}
+      </h1>
 
       <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
         {t.hero.subtitle}
@@ -18,7 +20,7 @@ export default function Hero() {
       <div className="mt-10">
         <a
           href="https://wa.me/5541992188618"
-          className="px-8 py-4 bg-green-500 text-black rounded-xl"
+          className="px-8 py-4 bg-green-500 text-black rounded-xl text-lg font-semibold hover:scale-105 transition"
         >
           {t.hero.cta}
         </a>

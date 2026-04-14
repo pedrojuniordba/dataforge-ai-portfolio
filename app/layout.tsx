@@ -8,8 +8,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <body className="bg-black text-white">
-        <LanguageProvider>{children}</LanguageProvider>
+      <body className="bg-black text-white antialiased">
+        <LanguageProvider>
+          <div className="max-w-6xl mx-auto px-6">
+            {children}
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   )
