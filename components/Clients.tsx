@@ -27,9 +27,9 @@ export default function Clients() {
       </h2>
 
       <div className="mt-12 flex flex-wrap justify-center gap-10 text-gray-500">
-        {clients.map((client, index) => (
-          <div key={index} className="hover:text-white transition">
-            {client}
+        {clients.map((c, i) => (
+          <div key={i} className="hover:text-white transition">
+            {c}
           </div>
         ))}
       </div>
