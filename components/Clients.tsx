@@ -22,16 +22,13 @@ export default function Clients() {
         {t.clientsTitle}
       </p>
 
-      <h2 className="mt-4 text-xl text-gray-400 max-w-2xl mx-auto">
+      <h2 className="mt-4 text-gray-400 max-w-2xl mx-auto">
         {t.clientsSubtitle}
       </h2>
 
-      <div className="mt-12 flex flex-wrap justify-center gap-10 text-gray-500 text-lg font-medium">
+      <div className="mt-12 flex flex-wrap justify-center gap-10 text-gray-500">
         {clients.map((client, index) => (
-          <div
-            key={index}
-            className="opacity-70 hover:opacity-100 hover:text-white transition duration-300"
-          >
+          <div key={index} className="hover:text-white transition">
             {client}
           </div>
         ))}

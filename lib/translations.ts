@@ -1,11 +1,7 @@
 import { Lang } from "../context/LanguageContext"
 
 type Translation = {
-  hero: {
-    title: string
-    subtitle: string
-    cta: string
-  }
+  hero: { title: string; subtitle: string; cta: string }
   services: {
     title: string
     databases: { title: string; desc: string }
@@ -29,82 +25,74 @@ const translations: Record<Lang, Translation> = {
       databases: {
         title: "Databases",
         desc:
-          "Otimização e gestão de bancos de dados críticos, com foco em performance, disponibilidade e redução de custos. Atuação em Oracle, PostgreSQL e outros ambientes com tuning avançado e alta eficiência.",
+          "Otimização e gestão de bancos críticos com foco em performance, disponibilidade e redução de custos.",
       },
       cloud: {
         title: "Cloud",
         desc:
-          "Arquitetura e modernização de ambientes em cloud, com foco em escalabilidade, segurança e eficiência operacional. Soluções robustas para crescimento sustentável e redução de custos.",
+          "Arquitetura moderna, escalável e segura para ambientes cloud com alta eficiência operacional.",
       },
       ai: {
         title: "Automação com IA",
         desc:
-          "Desenvolvimento de agentes inteligentes para automatizar processos, reduzir esforço operacional e acelerar decisões. Integração de sistemas e criação de fluxos inteligentes com ganho real de produtividade.",
+          "Agentes inteligentes para automação de processos, redução de esforço manual e ganho de produtividade.",
       },
     },
     clientsTitle: "Empresas que confiam",
     clientsSubtitle:
-      "Parceiros e clientes que já contam com soluções em dados e automação com IA",
+      "Parceiros e clientes que utilizam soluções em dados e automação com IA",
   },
 
   EN: {
     hero: {
       title: "Transform your data into intelligence",
-      subtitle:
-        "Database, data engineering and AI automation solutions focused on performance",
+      subtitle: "Database and AI automation solutions",
       cta: "Free analysis",
     },
     services: {
       title: "Services",
       databases: {
         title: "Databases",
-        desc:
-          "Optimization and management of critical databases, focusing on performance, availability and cost reduction. Expertise in Oracle, PostgreSQL and high-performance environments.",
+        desc: "High-performance database optimization and management.",
       },
       cloud: {
         title: "Cloud",
-        desc:
-          "Cloud architecture and modernization with focus on scalability, security and operational efficiency. Robust solutions to support growth and reduce infrastructure costs.",
+        desc: "Scalable and secure cloud architecture.",
       },
       ai: {
         title: "AI Automation",
-        desc:
-          "Development of intelligent agents to automate processes, reduce manual effort and accelerate decision-making. Smart workflows that drive real productivity gains.",
+        desc: "Automation with intelligent AI agents.",
       },
     },
     clientsTitle: "Trusted by companies",
     clientsSubtitle:
-      "Partners and clients leveraging data engineering and AI automation solutions",
+      "Partners leveraging data engineering and AI automation",
   },
 
   ES: {
     hero: {
       title: "Transforma tus datos en inteligencia",
-      subtitle:
-        "Soluciones en bases de datos, ingeniería de datos y automatización con IA",
+      subtitle: "Soluciones en datos y automatización con IA",
       cta: "Análisis gratuito",
     },
     services: {
       title: "Servicios",
       databases: {
         title: "Bases de datos",
-        desc:
-          "Optimización y gestión de bases de datos críticas, con enfoque en rendimiento, disponibilidad y reducción de costos. Experiencia en Oracle, PostgreSQL y entornos de alta demanda.",
+        desc: "Optimización y alto rendimiento.",
       },
       cloud: {
         title: "Cloud",
-        desc:
-          "Arquitectura y modernización en cloud con enfoque en escalabilidad, seguridad y eficiencia operativa. Soluciones diseñadas para crecer y optimizar recursos.",
+        desc: "Arquitectura escalable y segura.",
       },
       ai: {
-        title: "Automatización con IA",
-        desc:
-          "Desarrollo de agentes inteligentes para automatizar procesos, reducir esfuerzo manual y acelerar decisiones. Flujos inteligentes que generan productividad real.",
+        title: "Automatización IA",
+        desc: "Automatización con agentes inteligentes.",
       },
     },
     clientsTitle: "Empresas que confían",
     clientsSubtitle:
-      "Clientes y socios que utilizan soluciones de datos y automatización con IA",
+      "Clientes que utilizan soluciones en datos y automatización",
   },
 }
 
