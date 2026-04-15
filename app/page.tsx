@@ -7,7 +7,7 @@ import FloatingWhatsApp from "../components/FloatingWhatsApp"
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-20">
       <Navbar />
       <Hero />
       <Services />
